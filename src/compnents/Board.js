@@ -40,7 +40,7 @@ class Board extends Component {
   }
 
   render(){ 
-   console.log('render 02',this.props.display.board);
+  // console.log('render 02',this.props.display.board);
     return this.props.display.board.map((row,i)=>{
      return <tr  key={i}>{this.getformat(row.length,i)}</tr>;
     })

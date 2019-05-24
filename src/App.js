@@ -59,7 +59,7 @@ class App extends Component {
        }
     }
    let draw_status  = this.drawValidation(board)
-   console.log('draw_status',draw_status)
+   //console.log('draw_status',draw_status)
    if (draw_status) {
       gameOver = true;
       message = "Game Draw";
@@ -109,7 +109,7 @@ class App extends Component {
    // checking board status horizontally
    boardHorizontal=(board)=>{
     // Check only if column is 3 or less
-    let winnerCount=0;
+   
     let {winnerboard}={...this.state};
     for (let rowLoop =0; rowLoop <= 5; rowLoop++) {
       for (let columnLoop =0; columnLoop <= 3; columnLoop++) {
@@ -117,7 +117,7 @@ class App extends Component {
          if (board[rowLoop][columnLoop] === board[rowLoop][columnLoop + 1] && 
           board[rowLoop][columnLoop] === board[rowLoop][columnLoop + 2] &&
           board[rowLoop][columnLoop] === board[rowLoop][columnLoop + 3]) {
-              console.log('Horizontal win')
+              //console.log('Horizontal win')
               winnerboard['row']=rowLoop;
               winnerboard['column']=columnLoop;
               winnerboard['row1']=rowLoop;
@@ -132,7 +132,6 @@ class App extends Component {
         }
       }
      
-      winnerCount++;
     }
   }
 
@@ -140,7 +139,7 @@ class App extends Component {
   boardVertical=(board)=>{
    // console.log(board);
      // Check only if column is 3 or less
-    let winnerCount=0;
+    
     let {winnerboard}={...this.state};
      for (let rowLoop=0; rowLoop <=2; rowLoop++) {
       for (let columnLoop =0; columnLoop <= 6; columnLoop++) {
@@ -160,19 +159,17 @@ class App extends Component {
               winnerboard['row3']=rowLoop+3;
               winnerboard['column3']=columnLoop; 
               this.setState({winnerboard});
-            console.log('vertical win')
+            //console.log('vertical win')
             return board[rowLoop][columnLoop];
            }
         }
       }
     }
-    winnerCount++;
   }
 
   // checking board status diagonally Right
   boardDiagonalRight=(board)=>{
-    let winnerCount=0;
-    let {winnerboard}={...this.state};
+   let {winnerboard}={...this.state};
     for (let rowLoop = 3; rowLoop <= 5; rowLoop++) {
       for (let columnLoop = 0; columnLoop < 3; columnLoop++) {
         if (board[rowLoop][columnLoop]) {
@@ -192,7 +189,7 @@ class App extends Component {
             winnerboard['column3']=columnLoop+3; 
             this.setState({winnerboard});
 
-            console.log('diagonal right win')
+            //console.log('diagonal right win')
             return board[rowLoop][columnLoop];
           }
           
@@ -203,8 +200,7 @@ class App extends Component {
 
   // checking board status diagonally Left
   boardDiagonalLeft=(board)=>{
-    let winnerCount=0;
-    let {winnerboard}={...this.state};
+   let {winnerboard}={...this.state};
     for (let rowLoop = 3; rowLoop <= 5; rowLoop++) {
       for (let columnLoop = 3; columnLoop <= 6; columnLoop++) {
         if (board[rowLoop][columnLoop]) {
@@ -224,7 +220,7 @@ class App extends Component {
             winnerboard['column3']=columnLoop-3; 
             this.setState({winnerboard});
 
-          console.log('diagonal left win')
+          //console.log('diagonal left win')
             return board[rowLoop][columnLoop];
           }
          
