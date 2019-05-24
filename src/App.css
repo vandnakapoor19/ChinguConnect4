@@ -35,3 +35,9 @@ body{
   background: #f0fbfc;
 }
 
+.content{
+margin: 0 auto;
+width: 50%;
+margin-top: 5%;
+}
+  

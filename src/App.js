@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import Board from './compnents/Board';
+import './App.css';
 
 
 class App extends Component {
@@ -266,9 +267,11 @@ class App extends Component {
   render(){
    // console.log(this.state);
     return (
+      <div className="content">
       <div style={this.maincontainer}>
        <div style={{textAlign:'center',float:'left',width:'30%',background:'#b2cecf'}}>
-       <h3>Chingu Solo Project - Connect 4</h3>
+       <h3>Chingu Solo Project - Connect 4 </h3>
+       <h3>Vandna Kapoor</h3>
         <span onClick={this.startagain} style={this.reset}>Restart Game</span>
         
         <div >
@@ -276,15 +279,15 @@ class App extends Component {
           <h3 style={{color:'#ef5656'}} >{this.state.message}</h3>
           </div>
           
-          <div ><div>
-            <h3 ></h3></div><div><h3>
-              Player 1</h3></div></div><div style={this.player2}></div>
-              <div ><div>
-                <h3 >
-                  </h3></div><div><h3 >Player 2</h3>
-                  </div></div><div style={this.player1}></div>
-                  <div>
-                </div></div>
+          <div style={{display: 'flex'}}>
+            <div style={{float: 'left',marginLeft: '18.5%'}}><h3> Player 1</h3></div>
+              <div style={this.player2}></div>
+          </div>
+              <div style={{display: 'flex'}} >
+                <div style={{float: 'left',marginLeft: '18.5%'}}><h3 >Player 2</h3></div>
+                <div style={this.player1}></div>
+                </div>
+                  </div>
         
         </div>
         <div style={{textAlign:'center',float:'left',width:'30%'}}>
@@ -295,6 +298,7 @@ class App extends Component {
         </table>
        </div>
         
+    </div>
     </div>
     );
   }
