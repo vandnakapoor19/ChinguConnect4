@@ -144,7 +144,7 @@ class App extends Component {
      for (let rowLoop=0; rowLoop <=2; rowLoop++) {
       for (let columnLoop =0; columnLoop <= 6; columnLoop++) {
       
-       if (board[rowLoop][columnLoop]!=0) {
+       if (board[rowLoop][columnLoop]!==0) {
         if(
             board[rowLoop][columnLoop] === board[rowLoop+1][columnLoop] && 
             board[rowLoop][columnLoop] === board[rowLoop+2][columnLoop] &&
