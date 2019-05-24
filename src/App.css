@@ -31,6 +31,7 @@
     transform: rotate(360deg);
   }
 }
-* {
-  background: #b2cecf;
+body{
+  background: #f0fbfc;
 }
+

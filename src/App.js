@@ -245,7 +245,7 @@ class App extends Component {
 
   maincontainer = {
     display:'flex',
-    background: '#b2cecf'
+    background: '#fff'
    };
     player1={
     background: '#f69748',

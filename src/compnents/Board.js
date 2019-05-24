@@ -49,12 +49,13 @@ class Board extends Component {
 
 const columnStyle = {
  textAlign:'center',
- border: '2px solid #4EB1BA'
+ border: '2px solid #4EB1BA',
+ //display: '-webkit-box'
 };
 
 const divStyle ={
-  padding: '20px',
-  width: '70px',
+  // padding: '20px',
+  // width: '70px',
   background: '#1f41b5',
   textAlign:'center',
   cursor: 'pointer',
@@ -62,8 +63,8 @@ const divStyle ={
 }
 
 const test= {
-  padding: '20px',
-  width: '70px',
+  // /padding: '20px',
+  // width: '70px',
   background: '#01ff70',
   textAlign:'center',
   cursor: 'pointer',
