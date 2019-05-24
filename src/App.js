@@ -267,7 +267,7 @@ class App extends Component {
    // console.log(this.state);
     return (
       <div style={this.maincontainer}>
-       <div style={{textAlign:'center',float:'left',width:'30%'}}>
+       <div style={{textAlign:'center',float:'left',width:'30%',background:'#b2cecf'}}>
        <h3>Chingu Solo Project - Connect 4</h3>
         <span onClick={this.startagain} style={this.reset}>Restart Game</span>
         
@@ -287,14 +287,13 @@ class App extends Component {
                 </div></div>
         
         </div>
-        
-                <div style={{textAlign:'center',float:'left',width:'30%'}}>
-                  <table >
-                  <tbody>
-                  <Board display={this.state} handleClick={this.playerPosition}/>
-                </tbody>
-                </table>
-                </div>
+        <div style={{textAlign:'center',float:'left',width:'30%'}}>
+        <table >
+        <tbody>
+          <Board display={this.state} handleClick={this.playerPosition}/>
+        </tbody>
+        </table>
+       </div>
         
     </div>
     );
