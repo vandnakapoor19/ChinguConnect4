@@ -189,7 +189,7 @@ class App extends Component {
             winnerboard['column3']=columnLoop+3; 
             this.setState({winnerboard});
 
-            console.log('diagonal right win')
+           // console.log('diagonal right win')
             return board[rowLoop][columnLoop];
           }
           
