@@ -171,7 +171,7 @@ class App extends Component {
   boardDiagonalRight=(board)=>{
    let {winnerboard}={...this.state};
     for (let rowLoop = 3; rowLoop <= 5; rowLoop++) {
-      for (let columnLoop = 0; columnLoop < 3; columnLoop++) {
+      for (let columnLoop = 0; columnLoop < 4; columnLoop++) {
         if (board[rowLoop][columnLoop]) {
           if (
             board[rowLoop][columnLoop] === board[rowLoop - 1][columnLoop + 1] &&
@@ -189,7 +189,7 @@ class App extends Component {
             winnerboard['column3']=columnLoop+3; 
             this.setState({winnerboard});
 
-            //console.log('diagonal right win')
+            console.log('diagonal right win')
             return board[rowLoop][columnLoop];
           }
           
@@ -220,7 +220,7 @@ class App extends Component {
             winnerboard['column3']=columnLoop-3; 
             this.setState({winnerboard});
 
-          //console.log('diagonal left win')
+          console.log('diagonal left win')
             return board[rowLoop][columnLoop];
           }
          
