@@ -3,6 +3,13 @@ This app is created for the Chingu Voyage 15 pre-work. It is a fun game where tw
 
 LIVE LINK : https://vanconnect4.herokuapp.com/
 
+## Features
+
+* Game status display
+* Game board made up of 7 columns and 6 rows.
+* Game discs (you should have a single disc definition that you dynamically replicate and attach to the DOM)
+* Reset Game button
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
