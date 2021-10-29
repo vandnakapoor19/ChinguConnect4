@@ -1,3 +1,8 @@
+## Overview
+This app is created for the Chingu Voyage 15 pre-work. It is a fun game where two player participate and can win the game.
+
+LIVE LINK : https://vanconnect4.herokuapp.com/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
