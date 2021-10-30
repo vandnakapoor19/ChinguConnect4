@@ -13,4 +13,4 @@ LIVE LINK : https://vanconnect4.herokuapp.com/
 * Reset Game button
 
 ## Tech Used
-React js
+  * This is a React App.
